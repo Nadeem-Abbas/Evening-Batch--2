@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    /* align-items: center; */
+    background: radial-gradient(brown,green,blue);
+}
+h1{
+    margin: 10px;
+    padding: 10px 5px 20px 15px;
+    width: 50%;
+    height: 10vh;
+    border-radius: 20px;
+    color: rgb(214, 159, 21);
+    background-color: rgb(8, 170, 170);
+    justify-content: center;
+}
