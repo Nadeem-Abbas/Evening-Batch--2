@@ -1,0 +1,39 @@
+h1{
+    background: cyan;
+    color: black;
+    padding-inline-end: 30px;
+    padding-left: 10%;
+    width: auto;
+    height: fit-content;
+    text-align: center;
+    text-decoration: solid;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    text-shadow: 30px;
+    text-indent: 10px;
+    border-radius: 30px;
+    border-color: blueviolet;
+    border-width: 100px;
+    border-style: groove;
+    direction: ltr;
+}
+.MainDiv h1{
+    background-color: rgb(25, 140, 175);
+    color: rgb(3, 90, 57);
+    width: 100px;
+    height: 50vh;
+    border-radius: 10px;
+    animation: backwards;
+    a
+
+}
+#Div h1{
+    background-color: red;
+    color: white;
+    width: 50%;
+    height: 50vh;
+    align-content: center;
+    align-self: baseline;
+    text-decoration-color: blueviolet;
+
+}
