@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+    background-image: url(Image/6.jpg);
+    background-color: rgba(27, 31, 34, 0.85);
+}
+h1{
+    font-size: 2.1rem;
+    line-height: 1.4;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    margin-top: 50px;
+}
+.bgcolor{
+    background-color: #1b9bff;
+}
+marquee{
+    font-size: 48px;
+    position:absolute;
+    bottom: 0;
+    color: white;
+    lighting-color: aquamarine;
+    text-shadow: 3px 3px #0082e6;
+    text-decoration-thickness: 10px;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background: #1b9bff;
+    transition: 0.5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/* @media(max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+
+    }
+}
+section{
+    background: url(Image/1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+} */
+.maindiv{
+    width: 90%;
+    height: 480px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(Image/6.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 10px white;
+    animation: slider 20s infinite linear;
+}
+/*Slide animation*/
+@keyframes slider{
+    0% {background-image:url('Image/6.jpg');}
+    20% {background-image:url('Image/5.jpg');}
+    40% {background-image:url('Image/4.jpg');}
+    60% {background-image:url('Image/3.jpg');}
+    80% {background-image:url('Image/2.jpg');}
+    100%{background-image:url('Image/1.jpg');}
+}
+.slide-container{
+    width: 800px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.img-container{
+    width: 4800px;
+    height: 600px;
+    transition: 2s left;
+}
+.slider-image{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.slider-button{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+#slider-image-1 :target ~ .img-container{
+    left: 0;
+}
+#slider-image-2 :target ~ .img-container{
+    left: -800px;
+}
+#slider-image-3 :target ~ .img-container{
+    left: -1600px;
+}
+#slider-image-4 :target ~ .img-container{
+    left: -2400px;
+}
+#slider-image-5 :target ~ .img-container{
+    left: -3200px;
+}
+#slider-image-6 :target ~ .img-container{
+    left: -4000px;
+}
