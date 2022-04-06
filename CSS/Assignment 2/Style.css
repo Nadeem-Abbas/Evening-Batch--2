@@ -151,7 +151,7 @@ section{
 .img-container{
     width: 4800px;
     height: 600px;
-    transition: 2s left;
+    transition: 2s left linear;
 }
 .slider-image{
     float: left;
