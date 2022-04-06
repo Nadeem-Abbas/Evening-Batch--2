@@ -1,0 +1,103 @@
+                /* oder oder */
+
+                .oder{
+
+
+                    background-color: aqua;
+                    height: auto;
+                    width: 100%;
+                    margin-top: 50px;
+                    display: flex;
+                                    }
+                    
+                                    .oder1{
+                    background-color: black;
+                    height: 50vh;
+                    width: 25%;
+                    
+                                    }
+                    
+                    
+                                    .oder2{
+                                        background-color:black;
+                                        height: 50vh;
+                                        width: 25%;
+                                        
+                                                        }     .oder3{
+                                                            background-color: black;
+                                                            height: 50vh;
+                                                            width: 25%;
+                                                            
+                                                                            }     .oder4{
+                                                                                background-color: black;
+                                                                                height: 50vh;
+                                                                                width: 25%;
+                                                                                
+                                                                                                }
+                    
+                           .oder1 ul{
+                    color: white;
+                    text-align: center;
+                    list-style: none;
+                    margin-right: 60px;
+                    font-size: 15px;
+                    
+                    }                                                                     
+                                                                                                
+                                                                                                
+                           .oder1 li{
+                    padding: 7px;
+                    margin: 5px;
+                    
+                        }                                                                     
+                                                                                             
+                        .oder2 ul{
+                            color: white;
+                            text-align: center;
+                            list-style: none;
+                            margin-right: 60px;
+                            font-size: 15px;
+                            
+                            }                                                                     
+                                                                                                        
+                                                                                                        
+                                   .oder2 li{
+                            padding: 7px;
+                            margin: 5px;
+                            
+                                }                                                                     
+                                                                                                     
+                                .oder3 ul{
+                                    color: white;
+                                    text-align: center;
+                                    list-style: none;
+                                    margin-right: 60px;
+                                    font-size: 15px;
+                                    
+                                    }                                                                     
+                                                                                                                
+                                                                                                                
+                                           .oder3 li{
+                                    padding: 7px;
+                                    margin: 5px;
+                                    
+                                        }         
+                                        .oder4 ul{
+                                            color: white;
+                                            text-align: center;
+                                            list-style: none;
+                                            margin-right: 60px;
+                                            font-size: 15px;
+                                            display: flex;
+                                            
+                                            }                                                                     
+                                                                                                                        
+                                                                                                                        
+                                                   .oder4 li{
+                                            padding: 15px;
+                                            margin: 10px;
+                                            font-size: 20px;
+                                            
+                                                }  
+                                        
+                                

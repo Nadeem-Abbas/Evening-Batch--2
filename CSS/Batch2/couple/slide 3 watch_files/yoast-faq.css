@@ -1,0 +1,30 @@
+/* Accordion
+		------------------------------------------------------------ */
+.schema-faq-question{
+  cursor: pointer;
+}
+
+.schema-faq-question:before{
+  width: 16px;
+  height: 20px;
+  display: inline-block;
+  content: "+";
+  margin-right: 5px;
+  vertical-align: top;
+}
+
+.schema-faq-question.collapse:before{
+  content: "-";
+}
+
+.schema-faq-question:hover{
+  opacity: 0.8;
+}
+
+.schema-faq-answer{
+  display: none;
+  padding-left: 1em;
+}
+.schema-faq-answer.default{
+  display: block;
+}

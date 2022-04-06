@@ -1,0 +1,418 @@
+    /* nav */
+.nav{
+background-color: whitesmoke;
+height: 10vh;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+.nav1{
+
+    background-color:white;
+    height: 5vh;
+    width: 25%;
+    margin:5px ;
+    padding: 10px;
+    
+    
+    }
+    .nav2{
+        margin:5px ;
+        padding: 10px;
+       
+        background-color: white;
+        height: 5vh;
+        width: 40%;
+        
+        }
+        
+    .nav2 ul{
+list-style: none;
+        display: flex;
+text-align: center;
+margin-top: -10px;
+font-size: 20px;
+    }    
+        
+        .nav2 li{
+
+padding: 10px;
+margin: 10px;
+        }
+        
+
+        .nav3 ul{
+            list-style: none;
+                    display: flex;
+            text-align: right;
+            margin-top: -10px;
+            font-size: 20px;
+            justify-content: right;
+color: white;
+        }    
+                    
+                    .nav3 li{
+            color: black;
+            padding: 10px;
+            margin: 10px;
+                    }
+                
+        
+        
+        
+        .nav3{
+            margin:5px ;
+            padding: 10px;
+           
+            background-color: white;
+            height: 5vh;
+            width: 35%;
+            
+            }
+
+
+
+
+
+                  /* image */
+
+.image{
+
+background-color: aqua;
+height: 90vh;
+width: 100%;
+  background-image: url(image/bruce-mars-qNF8jx8ZsFY-unsplash.jpg);
+background-position: center;
+background-size: cover;
+
+padding: auto%;
+margin: auto%;
+}
+
+
+      /* contant */
+
+      
+
+.contant{
+
+background-color:wheat;
+height: 24vh;
+width: 50%;
+margin-left: 350px;
+border-radius: 50px;
+border: 4px solid sandybrown;
+transition: all 2s ;
+}
+
+.contant h1{
+/* margin-top: 30px; */
+    justify-content: center;
+    text-align: center;
+}
+.contant p{
+
+    justify-content: center;
+    text-align: center;
+}
+.contant:hover{
+    transform: scale(1.2);
+
+
+}
+
+
+
+
+
+
+
+
+   /* shirts */
+   .shirts{
+
+background-color: white;
+height: 60vh;
+width: 100%;
+display: flex;
+justify-content: center;
+margin-top: 10px;
+   }
+
+   .shirts1{
+border-radius: 50px;
+    background-color:whitesmoke;
+    height: 50vh;
+    width: 20%;
+    margin: 10px;
+    /* padding: 20px; */
+    border: 4px solid sandybrown;
+    transition: all 2s;
+
+    background-image: url(image/shirt.jpg);
+    background-position: auto;
+    background-size: cover;
+}   
+       .shirts2{
+        margin: 10px;
+    transition: all 2s;
+    /* padding: 20px; */
+    border-radius: 50px;
+        background-color:whitesmoke;
+        height: 50vh;
+        border: 4px solid sandybrown;
+        width: 20%;
+        background-image: url(image/tshit.jpg);
+        background-position: auto;
+        background-size: cover;
+           }
+           .shirts3{
+            border-radius: 50px;
+    transition: all 2s;
+    background-color:whitesmoke;
+            height: 50vh;
+            width: 20%;
+            margin: 10px;
+            /* padding: 20px; */
+            border: 4px solid sandybrown;
+            background-image: url(image/court.jpg);
+            background-position: auto;
+            background-size: cover;
+               }
+               .shirts4{
+                border-radius: 50px;
+                background-color:whitesmoke;
+                height: 50vh;
+                width: 20%;
+                margin: 10px;
+                /* padding: 20px; */
+    transition: all 2s;
+    border: 4px solid sandybrown;
+    background-image: url(image/trou.jpg);
+    background-position: auto;
+    background-size: cover;
+                   }
+                   .shirts1:hover{
+                       transform: scale(1.1);
+                       border: 4px solid sandybrown;
+                       background-color: wheat;
+                   }
+
+                   .shirts2:hover{
+                    border: 4px solid sandybrown;
+                    transform: scale(1.1);
+                    background-color: wheat;
+
+                }
+                .shirts3:hover{
+                    background-color: wheat;
+                    border: 4px solid sandybrown;
+
+                    transform: scale(1.1);
+                }
+                .shirts4:hover{
+
+                    border: 4px solid sandybrown;
+                    background-color: wheat;
+                    transform: scale(1.1);
+                }
+
+
+
+
+
+
+
+                .shirt{
+
+                    background-color:white;
+                    height: 60h;
+                    width: 90%;
+                    display: flex;
+                    margin-left:70px;
+                }
+
+
+
+                .shirt1{
+                    border-radius: 50px;
+                    border: 4px solid sandybrown;
+                    background-color:whitesmoke;
+                    height: 50vh;
+                    width: 20%;
+                    margin: 15px;
+                    margin-left: 24px;
+                    /* padding: 20px; */
+                    transition: all 2s;
+                    background-image: url(image/shlarwar\ kameez.jpg);
+                    background-position: auto;
+                    background-size: cover;
+                       }   
+                       .shirt2{
+                        margin: 15px;
+                    transition: all 2s;
+                    /* padding: 20px; */
+                    border: 4px solid sandybrown;
+                    border-radius: 50px;
+                        background-color: whitesmoke;
+                        height: 50vh;
+                        width: 20%;
+                        background-image: url(image/jeans.jpg);
+    background-position: auto;
+    background-size: cover;       
+                    }
+                           .shirt3{
+                            border-radius: 50px;
+                    transition: all 2s;
+                    border: 4px solid sandybrown;
+                    background-color:whitesmoke;
+                            height: 50vh;
+                            width: 20%;
+                            margin: 15px;
+                            /* padding: 20px; */
+                            background-image: url(image/track.jpg);
+                            background-position: auto;
+                            background-size: cover;
+                               }
+                               .shirt4{
+                                border-radius: 50px;
+                                background-color:whitesmoke;
+                                border: 4px solid sandybrown;
+                                height: 50vh;
+                                width: 20%;
+                                margin: 15px;
+                                /* padding: 20px; */
+                    transition: all 2s;
+                    background-image: url(image/outfitt.jpg);
+                    background-position: auto;
+                    background-size: cover;        
+                                   }
+                                   .shirt1:hover{
+                                    background-color: wheat;
+                                    border: 4px solid sandybrown;
+                                    transform: scale(1.1);
+                                   }
+                
+                                   .shirt2:hover{
+                                    background-color: wheat;
+                                    border: 4px solid sandybrown;
+                                    transform: scale(1.1);
+                                }
+                                .shirt3:hover{
+                                    background-color: wheat;
+                                    border: 4px solid sandybrown;
+                                    transform: scale(1.1);
+                                }
+                                .shirt4:hover{
+                                    border: 4px solid sandybrown;
+                                    background-color: wheat;
+                                    transform: scale(1.1);
+                                
+                
+                                }
+                
+                
+                /* oder oder */
+
+                .oder{
+
+
+background-color: aqua;
+height: auto;
+width: 100%;
+margin-top: 50px;
+display: flex;
+                }
+
+                .oder1{
+background-color: black;
+height: 50vh;
+width: 25%;
+
+                }
+
+
+                .oder2{
+                    background-color:black;
+                    height: 50vh;
+                    width: 25%;
+                    
+                                    }     .oder3{
+                                        background-color: black;
+                                        height: 50vh;
+                                        width: 25%;
+                                        
+                                                        }     .oder4{
+                                                            background-color: black;
+                                                            height: 50vh;
+                                                            width: 25%;
+                                                            
+                                                                            }
+
+       .oder1 ul{
+color: white;
+text-align: center;
+list-style: none;
+margin-right: 60px;
+font-size: 15px;
+
+}                                                                     
+                                                                            
+                                                                            
+       .oder1 li{
+padding: 7px;
+margin: 5px;
+
+    }                                                                     
+                                                                         
+    .oder2 ul{
+        color: white;
+        text-align: center;
+        list-style: none;
+        margin-right: 60px;
+        font-size: 15px;
+        
+        }                                                                     
+                                                                                    
+                                                                                    
+               .oder2 li{
+        padding: 7px;
+        margin: 5px;
+        
+            }                                                                     
+                                                                                 
+            .oder3 ul{
+                color: white;
+                text-align: center;
+                list-style: none;
+                margin-right: 60px;
+                font-size: 15px;
+                
+                }                                                                     
+                                                                                            
+                                                                                            
+                       .oder3 li{
+                padding: 7px;
+                margin: 5px;
+                
+                    }         
+                    .oder4 ul{
+                        color: white;
+                        text-align: center;
+                        list-style: none;
+                        margin-right: 60px;
+                        font-size: 15px;
+                        display: flex;
+                        
+                        }                                                                     
+                                                                                                    
+                                                                                                    
+                               .oder4 li{
+                        padding: 15px;
+                        margin: 10px;
+                        font-size: 20px;
+                        
+                            }  
+                    
+                                                                                         
+            

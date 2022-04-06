@@ -1,0 +1,71 @@
+:root{   
+
+
+
+}
+.mainpic{height: 60vh;
+width: 100%;
+display: flex;
+background-color;
+margin-bottom: 1%;
+}
+.descrip{height: 100%;
+width: 45%;
+background-color:;
+text-align: center;
+justify-content: center;
+}
+.descrip strong{font-size: xx-large;
+    font-style: oblique;
+    
+}
+
+.mpic{height: 100%;
+width: 50%;
+background-image: url("couple/beauty\ main.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.r1parent{background-color: aqua;
+height: 60vh;width: 100%;
+display: flex;justify-content: center;
+
+
+}
+.prod1{height: 100%;
+width: 30%;
+background-color: red;
+margin: 1%;
+margin-top: 0%;}
+
+.pic1{height: 60%;background-image: url("couple/bracelet.webp");
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+background-color: black;
+color: aliceblue;}
+.desc1{margin-top: 5%;
+background-color: blue;}
+
+/* pic 1 dine */
+
+
+.prod2{height: 100%;
+    width: 30%;
+    background-color: red;
+    margin: 1%;
+    margin-top: 0%;}
+    
+    .pic2{height: 60%;background-image: url("couple/bracelet.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    background-color: black;
+    color: aliceblue;}
+    .desc2{margin-top: 5%;
+    background-color: ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}

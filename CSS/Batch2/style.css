@@ -1,0 +1,1578 @@
+:root{
+    --bgcolor: lightgreen;
+    --hover-text: red;
+    --a-text-col: white;
+    --h1bgcolor:  rgb(182, 234, 158);
+    --h1transition: all 1.2s ease;
+    --btn-bgcolor: rgb(140, 165, 90);
+    --a-hover-text-color: rgb(145, 5, 5);
+    --text_col: #0000ff;
+    --scale-1-half: 1.5;
+    --scale-2: 2;
+    --h2text-col: rgb(239, 108, 233);
+    --text-shadow: white;
+    --nav-display: inline-block;
+    --nav-ul-float: right;
+    --nav-a-transition: all 0.8s linear;
+    --nav-logo-font-size: 35px;
+    --nav-a-font-size: 17px;
+    --nav-height: 80px;
+    --nav-line-height: 80px;
+    --nav-padding: 0 100px;
+    --nav-font-weight: bold;
+    --nav-margin: 0 5px;
+    --parentDivCol: rgb(209, 249, 249);
+    --default_height: 100vh;
+    --div_height: 50vh;
+    --div_width: 100%;
+    --logo_height: 95vh;
+    --logo_width: 100%;
+    --video-width: 98%;
+    --video-height: auto;
+    --subDiv_height: 60vh;
+    --child_height: 100%;
+    --child_width: 25%;
+    --childImg_height: 45vh;
+    --childImg_width: 100%;
+    --subDiv-width1: 70%;
+    --subDiv-width2: 30%;
+    --width-fitcontent: fit-content;
+    --height-fitcontent: fit-content;
+    --imgpad: 0px 10px 0px 10px;
+    --btn-Border-radius: 15px;
+    --pxl-0: 0px;
+    --pxl-2: 2px;
+    --pxl-5: 5px;
+    --pxl-10: 10px;
+    --pxl-15: 15px;
+    --pxl-20: 20px;
+    
+}
+*{
+    margin: var(--pxl-0);
+    padding: var(--pxl-0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: var(--parentDivCol);
+    margin: var(--pxl-0);
+    padding: var(--pxl-0);
+    width: var(--div_width);
+    height: var(--default_height);
+    justify-content: space-between;
+}
+h1{
+    top: var(--pxl-5);
+    bottom: var(--pxl-5);
+    color: var(--text_col);
+    padding: var(--pxl-10);
+    border-radius: var(--pxl-2);
+    background-color: var(--h1bgcolor);
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-shadow: var(--pxl-5) var(--text-shadow);
+}
+h1:hover{
+    text-decoration: underline;
+    background-color: var(--text_col);
+    color: var(--hover-text);
+    transition: var(--h1transition);
+}
+h2{
+    top: var(--pxl-5);
+    bottom: var(--pxl-5);
+    color: var(--h2text-col);
+    padding: var(--pxl-10);
+    border-radius: var(--pxl-2);
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+h2:hover{
+    text-decoration: none;
+    background-color: var(--bgcolor);
+    color: var(--hover-text);
+    transition: var(--h1transition);
+}
+h3:hover{
+    color: var(--btn-bgcolor);
+    background-color: var(--parentDivCol);
+    text-transform: capitalize;
+    text-decoration: underline;
+    transition: var(--nav-a-transition);
+}
+nav{
+    background: var(--btn-bgcolor);
+    height: var(--nav-height);
+    width: var(--div_width);
+}
+label.logo{
+    color: var(--bgcolor);
+    font-size: var(--nav-logo-font-size);
+    line-height: var(--nav-line-height);
+    padding: var(--nav-padding);
+    font-weight: var(--nav-font-weight);
+}
+nav ul{
+    float: var(--nav-ul-float);
+    margin-right: var(--pxl-20);
+}
+nav ul li{
+    display: var(--nav-display);
+    line-height: var(--nav-line-height);
+    margin: var(--nav-margin);
+}
+nav ul li a{
+    color: var(--bgcolor);
+    padding: var(--pxl-10) var(--pxl-15);
+    border-radius: var(--pxl-15);
+    font-size: var(--nav-a-font-size);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ nav ~ a.active, a:hover{
+    background: var(--text_col);
+    text-decoration: underline;
+    box-sizing: border-box;
+    transition: var(--nav-a-transition)
+}
+.checkbtn{
+    font-size: 30px;
+    color: var(--text-shadow);
+    float: right;
+    line-height: var(--nav-line-height);
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+    @media(max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+
+    }
+}
+.wrapper{
+    margin: var(--pxl-0);
+    padding: var(--pxl-0);
+    width: var(--div_width);
+    height: var(--def_height);
+}
+.maindiv{
+    width: 98%;
+    height: 624px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    background-image: url(Images/1.png);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 10px white;
+    animation: slider 20s infinite linear;
+}
+/*Slide animation*/
+@keyframes slider{
+    0% {background-image:url('Images/10.jpg');}
+    20% {background-image:url('Images/9.jpg');}
+    40% {background-image:url('Images/8.jpg');}
+    60% {background-image:url('Images/7.jpg');}
+    80% {background-image:url('Images/6.jpg');}
+    100%{background-image:url('Images/5.jpg');}
+}
+.slide-container{
+    width: 800px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.img-container{
+    width: 4800px;
+    height: 600px;
+    transition: 2s left linear;
+}
+.slider-image{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.slider-button{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+#slider-image-1 :target ~ .img-container{
+    left: 0;
+}
+#slider-image-2 :target ~ .img-container{
+    left: -800px;
+}
+#slider-image-3 :target ~ .img-container{
+    left: -1600px;
+}
+#slider-image-4 :target ~ .img-container{
+    left: -2400px;
+}
+#slider-image-5 :target ~ .img-container{
+    left: -3200px;
+}
+#slider-image-6 :target ~ .img-container{
+    left: -4000px;
+}
+.logo{
+    padding: var(--div_pad);
+    margin-left: var(--pxl-10);
+    width: var(--logo_width);
+    height: var(--logo_height);
+    justify-content: center;
+    justify-items: center;
+}
+.logo img{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-10);
+    margin-right: var(--pxl-10);
+    width: var(--div_width);
+    height: var(--logo_height);
+    justify-content: center;
+    justify-items: center;
+}
+.video video{
+    padding: var(--pxl-20);
+    width: var(--video-width);
+    height: var(--video-height);
+    overflow: hidden;
+}
+.tractors{
+    display:flex;
+    background-color: azure;
+    width: var(--div_width);
+    height: var(--subDiv_height);
+}
+.tractors .child1{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.tractors .child1 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.tractors a{
+    text-decoration: none; 
+}
+.tractors a:hover{
+    text-decoration: underline;
+    background-color: var(--bgcolor);
+    color: var(--a-hover-text-color);
+    scale: var(--scale-2);
+}
+.tractors .child1 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+    color: var(--text_col);
+}
+.tractors .child1 p:hover{
+    scale:var(--scale-2);
+}
+.tractors .child1 button{
+    bottom: var(--pxl-0);
+    align-self: center;
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+/* .tractors .child1 button::before{
+    content: '';
+    position: relative;
+}
+.tractors .child1 button:hover:before{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    
+} */
+.tractors .child1 button:hover{
+    background-color: var(--bgcolor);
+    transition: var(--nav-a-transition);
+    color: var(--bgcolor);
+    transform: scaleX(1.2);
+    transform: translate(4);
+    text-transform: capitalize;
+} 
+/* .tractors .child1 button::after{
+    content: "";
+    position: relative;
+}
+.tractors .child1 button:hover:after{
+    content: '';
+    position: absolute;
+    height: 5px;width: 20%;
+    background: var(--text_col);
+    transition: var(--nav-a-transition);
+} */
+.tractors .child2{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.tractors .child2 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.tractors .child2 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.tractors .child2 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.tractors .child2 button::before{
+    content: '';
+    position: relative;
+    
+}
+.tractors .child2 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.tractors .child3{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.tractors .child3 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.tractors .child3 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.tractors .child3 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.tractors .child3 button::before{
+    content: '';
+    position: relative;
+    
+}
+.tractors .child3 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.tractors .child4{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.tractors .child4 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.tractors .child4 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.tractors .child4 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.tractors .child4 button::before{
+    content: '';
+    position: relative;
+    
+}
+.tractors .child4 button:hover::after{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+.combine{
+    display:flex;
+    background-color: azure;
+    width: var(--div_width);
+    height: var(--subDiv_height);
+}
+.combine .child1{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.combine .child1 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.combine a{
+    text-decoration: none; 
+}
+.combine a:hover{
+    text-decoration: underline;
+    background-color: var(--bgcolor);
+    color: var(--a-hover-text-color);
+    scale: var(--scale-2);
+}
+.combine .child1 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.combine .child1 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.combine .child1 button::before{
+    content: '';
+    position: relative;
+    
+}
+.combine .child1 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.combine .child2{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.combine .child2 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.combine .child2 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.combine .child2 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.combine .child2 button::before{
+    content: '';
+    position: relative;
+    
+}
+.combine .child2 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.combine .child3{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.combine .child3 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.combine .child3 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.combine .child3 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.combine .child3 button::before{
+    content: '';
+    position: relative;
+    
+}
+.combine .child3 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.combine .child4{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.combine .child4 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.combine .child4 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.combine .child4 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.combine .child4 button::before{
+    content: '';
+    position: relative;
+    
+}
+.combine .child4 button:hover::after{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+.disk{
+    display:flex;
+    background-color: azure;
+    width: var(--div_width);
+    height: var(--subDiv_height);
+}
+.disk .child1{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.disk .child1 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.disk a{
+    text-decoration: none; 
+}
+.disk a:hover{
+    text-decoration: underline;
+    background-color: var(--bgcolor);
+    color: var(--a-hover-text-color);
+    scale: var(--scale-2);
+}
+.disk .child1 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.disk .child1 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.disk .child1 button::before{
+    content: '';
+    position: relative;
+    
+}
+.disk .child1 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.disk .child2{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.disk .child2 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.disk .child2 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.disk .child2 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.disk .child2 button::before{
+    content: '';
+    position: relative;
+    
+}
+.disk .child2 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.disk .child3{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.disk .child3 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.disk .child3 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.disk .child3 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.disk .child3 button::before{
+    content: '';
+    position: relative;
+    
+}
+.disk .child3 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.disk .child4{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.disk .child4 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.disk .child4 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.disk .child4 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.disk .child4 button::before{
+    content: '';
+    position: relative;
+    
+}
+.disk .child4 button:hover::after{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+.Field{
+    display:flex;
+    background-color: azure;
+    width: var(--div_width);
+    height: var(--subDiv_height);
+}
+.Field .child1{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.Field .child1 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.Field .child1 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.Field .child1 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.Field .child1 button::before{
+    content: '';
+    position: relative;
+    
+}
+.Field .child1 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.Field .child2{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.Field .child2 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.Field .child2 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.Field .child2 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.Field .child2 button::before{
+    content: '';
+    position: relative;
+    
+}
+.Field .child2 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.Field .child3{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.Field .child3 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.Field .child3 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.Field .child3 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.Field .child3 button::before{
+    content: '';
+    position: relative;
+    
+}
+.Field .child3 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.Field .child4{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.Field .child4 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.Field .child4 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.Field .child4 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.Field .child4 button::before{
+    content: '';
+    position: relative;
+    
+}
+.Field .child4 button:hover::after{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+.implements{
+    display:flex;
+    background-color: azure;
+    width: var(--div_width);
+    height: var(--subDiv_height);
+}
+.implements .child1{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.implements .child1 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.implements .child1 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.implements .child1 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.implements .child1 button::before{
+    content: '';
+    position: relative;
+    
+}
+.implements .child1 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.implements .child2{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.implements .child2 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.implements .child2 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.implements .child2 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.implements .child2 button::before{
+    content: '';
+    position: relative;
+    
+}
+.implements .child2 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.implements .child3{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.implements .child3 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.implements .child3 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.implements .child3 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.implements .child3 button::before{
+    content: '';
+    position: relative;
+    
+}
+.implements .child3 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.implements .child4{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.implements .child4 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.implements .child4 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.implements .child4 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.implements .child4 button::before{
+    content: '';
+    position: relative;
+    
+}
+.implements .child4 button:hover::after{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+.plough{
+    display:flex;
+    background-color: azure;
+    width: var(--div_width);
+    height: var(--subDiv_height);
+}
+.plough .child1{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.plough .child1 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.plough .child1 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.plough .child1 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.plough .child1 button::before{
+    content: '';
+    position: relative;
+    
+}
+.plough .child1 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.plough .child2{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.plough .child2 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.plough .child2 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.plough .child2 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.plough .child2 button::before{
+    content: '';
+    position: relative;
+    
+}
+.plough .child2 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.plough .child3{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.plough .child3 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.plough .child3 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.plough .child3 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.plough .child3 button::before{
+    content: '';
+    position: relative;
+    
+}
+.plough .child3 button:hover::after{
+    background-color: var(--bgcolor);
+    position: absolute;
+}
+.plough .child4{
+    padding: var(--pxl-5);
+    height: var(--child_height);
+    width: var(--child_width);
+    background-color: var(--parentDivCol);
+}
+.plough .child4 img{
+    padding: var(--imgpad);
+    width: var(--childImg_width);
+    height: var(--childImg_height);
+    justify-content: center;
+    justify-items: center;
+}
+.plough .child4 p{
+    padding: var(--pxl-2);
+    margin-left: var(--pxl-20);
+}
+.plough .child4 button{
+    bottom: var(--pxl-0);
+    margin-left: var(--pxl-20);
+    padding: var(--pxl-10);
+    border-radius: var(--btn-Border-radius);
+    background-color: var(--btn-bgcolor);
+    color: var(--text_col);
+}
+.plough .child4 button::before{
+    content: '';
+    position: relative;
+    
+}
+.plough .child4 button:hover::after{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+.definition{
+    display:flex;
+    background-color: azure;
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+}
+.definition .child1{
+    padding: var(--pxl-5);
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+    background-color: var(--parentDivCol);
+}
+.definition .child1 p{
+    margin: var(--pxl-5) var(--pxl-20) var(--pxl-5) var(--pxl-10);
+    padding: var(--pxl-5);
+}
+.definition .child1{
+    padding: var(--pxl-5);
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.definition .child2{
+    padding: var(--pxl-5);
+    height: 20vh;
+    width: 20%;
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.definition .child2 img{
+    float: right;
+    padding: var(--imgpad);
+    background-color: var(--parentDivCol);
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+    overflow: hidden;
+}
+.gasoline{
+    display:flex;
+    background-color: azure;
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+}
+.gasoline .child1{
+    padding: var(--pxl-5);
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+}
+.gasoline .child1 p{
+    margin: var(--pxl-5) var(--pxl-20) var(--pxl-5) var(--pxl-10);
+    padding: var(--pxl-5);
+}
+.gasoline .child2{
+    padding: var(--pxl-5);
+    height: var(--height-fitcontent);
+    width: 15%;
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.gasoline .child2 img{
+    bottom: 0;
+    top: 50px;
+    float: right;
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+    justify-content: center;
+    justify-items: center;
+}
+.configration{
+    display:flex;
+    background-color: azure;
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+}
+.configration .child1{
+    padding: var(--pxl-5);
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+}
+.configration .child1 p{
+    margin: var(--pxl-5) var(--pxl-20) var(--pxl-5) var(--pxl-10);
+    padding: var(--pxl-5);
+}
+.configration .child2{
+    padding: var(--pxl-5);
+    height: var(--height-fitcontent);
+    width: 18%;
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.configration .child2 img{
+    bottom: 0;
+    top: 50px;
+    border-radius: var(--pxl-5);
+    float: right;
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+    justify-content: space-between;
+    justify-items: center;
+}
+.fuel{
+    display:flex;
+    background-color: azure;
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+}
+.fuel .child1{
+    margin-left: var(--pxl-10);
+    padding: var(--pxl-5);
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+}
+.fuel .child1 p{
+    margin: var(--pxl-5) var(--pxl-20) var(--pxl-5) var(--pxl-10);
+    padding: var(--pxl-5);
+}
+.fuel .child2{
+    padding: var(--pxl-5);
+    height: var(--height-fitcontent);
+    width: 18%;
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.fuel .child2 img{
+    bottom: 0;
+    top: 50px;
+    border-radius: var(--pxl-5);
+    float: right;
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+    justify-content: space-between;
+    justify-items: center;
+}
+.trans{
+    display:flex;
+    background-color: azure;
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+}
+.trans .child1{
+    margin-left: var(--pxl-10);
+    padding: var(--pxl-5);
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+}
+.trans .child1 p{
+    margin: var(--pxl-5) var(--pxl-20) var(--pxl-5) var(--pxl-10);
+    padding: var(--pxl-5);
+}
+.trans .child2{
+    padding: var(--pxl-5);
+    height: var(--height-fitcontent);
+    width: 18%;
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.trans .child2 img{
+    bottom: 0;
+    top: 50px;
+    border-radius: var(--pxl-5);
+    float: right;
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+    justify-content: space-between;
+    justify-items: center;
+}
+.hitch{
+    display:flex;
+    background-color: azure;
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+}
+.hitch .child1{
+    margin-left: var(--pxl-10);
+    padding: var(--pxl-5);
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+}
+.fuel .child1 p{
+    margin: var(--pxl-5) var(--pxl-20) var(--pxl-5) var(--pxl-10);
+    padding: var(--pxl-5);
+}
+.hitch .child2{
+    padding: var(--pxl-5);
+    height: var(--height-fitcontent);
+    width: 18%;
+    background-color: var(--parentDivCol);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.hitch .child2 img{
+    bottom: 0;
+    top: 50px;
+    border-radius: var(--pxl-5);
+    float: right;
+    height: var(--height-fitcontent);
+    width: var(--width-fitcontent);
+    justify-content: space-between;
+    justify-items: center;
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 300px;
+  }
+  
+  /* Taller footer on small screens */
+  @media (max-width: 567em) {
+      body {
+        margin-bottom: 700px;
+      }
+      .footer {
+        height: 700px;
+      }
+  }
+  
+  /* Sticky footer style and color
+  -------------------------------------------------- */
+  footer {
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: #bbb;
+  }
+  
+  footer a {
+    color: #999;
+    text-decoration:none;
+  }
+  
+  footer a:hover, footer a:focus {
+    color: #aaa;
+    text-decoration:none;
+    border-bottom:1px dotted #999;
+  }
+  
+  footer .form-control {
+      background-color: #1f2022;
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+      border: none;
+      resize: none;
+      color: #d1d2d2;
+      padding: 0.7em 1em;
+  }

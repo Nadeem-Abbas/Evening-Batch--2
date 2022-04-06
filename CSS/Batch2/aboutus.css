@@ -1,0 +1,196 @@
+/* nav */
+.nav{
+    background-color: whitesmoke;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+    .nav1{
+    
+        background-color:white;
+        height: 5vh;
+        width: 25%;
+        margin:5px ;
+        padding: 10px;
+        
+        
+        }
+        .nav2{
+            margin:5px ;
+            padding: 10px;
+           
+            background-color: white;
+            height: 5vh;
+            width: 40%;
+            
+            }
+            
+        .nav2 ul{
+    list-style: none;
+            display: flex;
+    text-align: center;
+    margin-top: -10px;
+    font-size: 20px;
+        }    
+            
+            .nav2 li{
+    
+    padding: 10px;
+    margin: 10px;
+            }
+            
+    
+            .nav3 ul{
+                list-style: none;
+                        display: flex;
+                text-align: right;
+                margin-top: -10px;
+                font-size: 20px;
+                justify-content: right;
+    color: white;
+            }    
+                        
+                        .nav3 li{
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                        }
+                    
+            
+            
+            
+            .nav3{
+                margin:5px ;
+                padding: 10px;
+               
+                background-color: white;
+                height: 5vh;
+                width: 28%;
+                
+                }
+
+
+/* <!-- anchor tag --> */
+.mian{
+    height: 6vh;
+    width: 100%;
+    background-color: white;
+display: flex;
+}
+.home ul{
+list-style: none;
+/* text-decoration: none; */
+
+}
+
+
+
+
+
+
+
+
+     /* oder oder */
+                                
+     .oder{
+                                
+                                
+        background-color: blue
+        ;
+        height: auto;
+        width: 100%;
+        margin-top: 90px;
+        display: flex;
+                        }
+        
+                        .oder1{
+        background-color: black;
+        height: 50vh;
+        width: 25%;
+        
+                        }
+        
+        
+                        .oder2{
+                            background-color:black;
+                            height: 50vh;
+                            width: 25%;
+                            
+                                            }     .oder3{
+                                                background-color: black;
+                                                height: 50vh;
+                                                width: 25%;
+                                                
+                                                                }     .oder4{
+                                                                    background-color: black;
+                                                                    height: 50vh;
+                                                                    width: 25%;
+                                                                    
+                                                                                    }
+        
+               .oder1 ul{
+        color: white;
+        text-align: center;
+        list-style: none;
+        margin-right: 60px;
+        font-size: 15px;
+        
+        }                                                                     
+                                                                                    
+                                                                                    
+               .oder1 li{
+        padding: 7px;
+        margin: 5px;
+        
+            }                                                                     
+                                                                                 
+            .oder2 ul{
+                color: white;
+                text-align: center;
+                list-style: none;
+                margin-right: 60px;
+                font-size: 15px;
+                
+                }                                                                     
+                                                                                            
+                                                                                            
+                       .oder2 li{
+                padding: 7px;
+                margin: 5px;
+                
+                    }                                                                     
+                                                                                         
+                    .oder3 ul{
+                        color: white;
+                        text-align: center;
+                        list-style: none;
+                        margin-right: 60px;
+                        font-size: 15px;
+                        
+                        }                                                                     
+                                                                                                    
+                                                                                                    
+                               .oder3 li{
+                        padding: 7px;
+                        margin: 5px;
+                        
+                            }         
+                            .oder4 ul{
+                                color: white;
+                                text-align: center;
+                                list-style: none;
+                                margin-right: 60px;
+                                font-size: 15px;
+                                display: flex;
+                                
+                                }                                                                     
+                                                                                                            
+                                                                                                            
+                                       .oder4 li{
+                                padding: 15px;
+                                margin: 10px;
+                                font-size: 20px;
+                                
+                                    }  
+                    
