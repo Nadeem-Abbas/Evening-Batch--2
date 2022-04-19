@@ -1,0 +1,23 @@
+.social-icons a{
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+    background: linear-gradient(0deg, #ddd, #fff);
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    text-decoration: none;
+    line-height: 50px;
+    border: 3px solid rgba(9, 9, 9, 0.2);
+    border-radius: 50%;
+    color: #146003;
+    transition: all 0.5s ease;
+}
+.social-icons a:hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration: none;
+}

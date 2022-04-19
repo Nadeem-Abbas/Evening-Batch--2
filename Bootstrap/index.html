@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Bootstrap practice</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        hr{
+            width: 90%;
+            margin-left: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <br>
+    <div class="container-fluid bg-primary p-10">
+        <div class="row bg-danger">
+            <div class="col-2 col-md-2 col-sm-4 col-lg-1 bg-info p-10"> home</div>
+            <div class="col-2 col-md-2 col-sm-4 col-lg-1 bg-primary p-10">Set up</div>
+            <div class="col-2 col-md-2 col-sm-4 col-lg-1 bg-info">Urgent</div>
+            <div class="col-2 col-md-2 col-sm-4 col-lg-1 bg-primary">Gone</div>
+            <div class="col-2 col-md-2 col-sm-4 col-lg-1 bg-body">Hello</div>
+            <div class="col-2 col-md-2 col-sm-4 col-lg-1 bg-dark">Gentle</div>
+        </div>
+    </div>
+    <br>
+    <center>
+        <hr >
+    </center>
+    <br>
+    <div class="container-fluid bg-primary p-10">
+        <div class="row bg-danger">
+            <div class="col-2 bg-primary "> home</div>
+            <div class="col-2 bg-secondary">Right</div>
+            <div class="col-2 bg-body">Set up</div>
+            <div class="col-2 bg-success">Urgent</div>
+            <div class="col-2 bg-light">Searching</div>
+            <div class="col-2 bg-info">Gone</div>
+        </div>
+    </div>
+    <br>
+    <center>
+        <hr >
+    </center>
+    <br>
+    <div class="container-fluid bg-primary p-10">
+        <div class="row bg-danger">
+            <div class="col-1 bg-info p-10"> home</div>
+            <div class="col-4 bg-light">Set up</div>
+            <div class="col-3 bg-secondary">Urgent</div>
+            <div class="col-4 bg-primary">Gone</div>
+        </div>
+    </div>
+    <br>
+    <center>
+    <hr >
+    </center>
+    <br>
+    <div class="container-fluid bg-primary p-10">
+        <div class="row bg-danger">
+            <div class="col-3 bg-success bg-opacity-50 p-2"> home</div>
+            <div class="col-1 bg-primary bg-opacity-100 p-2">Set up</div>
+            <div class="col-4 bg-info">Urgent</div>
+            <div class="col-4 bg-primary">Gone</div>
+        </div>
+    </div>
+    <br>
+    <center>
+        <hr >
+    </center>
+    <br>
+    <div class="container bg-primary p-10">
+        <div class="row bg-danger">
+            <div class="col-4 bg-primary "> home</div>
+            <div class="col-3 bg-info">Set up</div>
+            <div class="col-3 bg-primary">Urgent</div>
+            <div class="col-2 bg-info">Gone</div>
+        </div>
+    </div>
+    <br>
+    <center>
+        <hr >
+    </center>
+    <br>
+    <div class="container-fluid bg-primary p-10">
+        <div class="row bg-danger">
+            <div class="col-1 col-md-2 col-sm-4 col-lg-1 bg-info "> home</div>
+            <div class="col-4 col-md-2 col-sm-4 col-lg-1 bg-primary">Set up</div>
+            <div class="col-3 col-md-2 col-sm-4 col-lg-1 bg-info">Urgent</div>
+            <div class="col-4 col-md-2 col-sm-4 col-lg-1 bg-primary">Gone</div>
+        </div>
+    </div>
+    <br><br><br>
+    <h1>No. of columns in inner row</h1>
+    <div class="container-fluid bg-body"></div>
+    <div class="row bg-info">
+    <div class="col-1">
+        <div class="row bg-success">
+            <div class="col-1 bg-primary "> 1</div>
+            <div class="col-1 bg-secondary">1</div>
+            <div class="col-1 bg-info">1</div>
+            <div class="col-1 bg-success">1</div>
+            <div class="col-1 bg-danger">1</div>
+            <div class="col-1 bg-primary "> 1</div>
+            <div class="col-1 bg-secondary">1</div>
+            <div class="col-1 bg-info">1</div>
+            <div class="col-1 bg-success">1</div>
+            <div class="col-1 bg-danger">1</div>
+            <div class="col-1 bg-success">1</div>
+            <div class="col-1 bg-danger">1</div>
+        </div>
+    </div>
+</div>
+    <h2>There are 4 columns for 2nd gen row</h2>
+    <br><br><br>
+    <h1>No. of columns in inner column inner row</h1>
+    <div class="container-fluid bg-body"></div>
+    <div class="row bg-info"></div>
+    <div class="col-1">
+        <div class="row">
+            <div class="col-1 bg-primary "> 
+                <div class="row bg-success">
+                    <div class="col-1 bg-secondary">2</div>
+                     <div class="col-1 bg-body">3</div>
+                </div>
+            </div>
+            
+            <!-- <div class="col-2 bg-info">6</div> -->
+        </div>
+    </div>
+    <h2>There are 1 column for 2nd gen row</h2>
+    <br><br><br>
+    <div class="container bg-success p-10" >
+        <div class="row bg-body">
+            <div class="col bg-danger col-lg-2 col-md-1 col-sm-3">True</div>
+            <div class="col bg-info col-lg-1 col-md-2 col-sm-4">False</div>
+            <div class="col bg-success col-lg-1 col-md-2 col-sm-4">Success</div>
+            <div class="col bg-light col-lg-1 col-md-2 col-sm-4">Win</div>
+        </div>
+    </div>
+    <br><br><br>
+</body>
+</html>
