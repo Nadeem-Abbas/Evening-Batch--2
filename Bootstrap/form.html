@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Forms</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        *{margin: 0px;padding: 0px;}
+        .height{
+            height: 90vh;
+        }
+        .width{
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-success p-2 height width">
+        <div class="row bg-success p-2 height width">
+            <div class="col-4 p-2">
+                <form method="post" >
+                    <label >First Name: </label>
+                    <input type="text" class="form-control" placeholder="Enter Your First Name" name="1stName" value="Nadeem">
+                    <label >Last Name: </label>
+                    <input type="text" class="form-control" placeholder="Enter Your Last Name" name="lastName" value="Ansari">
+                    <label >Father's Name: </label>
+                    <input type="text" class="form-control" placeholder="Enter Your Father's Name" name="FName" value="Noor Muhmmad">
+                    <label >Email: </label>
+                    <input type="email" class="form-control" placeholder="Enter Your email" name="email" value="info@uiccl.com">
+                    <label >Password: </label>
+                    <input type="password" class="form-control" placeholder="Enter Password" name="password" value="*********">
+                    <label >Retype Password: </label>
+                    <input type="password" class="form-control" placeholder="Retype your password" name="Repass" value="*********">
+                    <label for=""><b> Choose your Gender: </b></label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                    <label for="flexRadioDefault" class="form-check-label">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label for="flextRadioDefault" class="form-check-label">Female</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault3">
+                    <label for="flexRadioDefault" class="form-check-label">Prefer not to say</label>
+                </div>
+                    <button class="btn btn-danger mt-4 p-3">Submit</button>
+                </form>
+            </div>
+            <div class="col-4 bg-primary p-2">
+                <label ><b> Choose Subjects to study: </b></label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Front-end Development </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="2" id="flexCheckDefault" checked>
+                    <label class="form-check-label" for="flexCheckDefault">Back-end Development </label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="3" id="flexCheckDefault">
+                    <label for="flexCheckDefault" class="form-check-label">Java programming</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="3" id="flexCheckDefault">
+                    <label for="flexCheckDefault" class="form-check-label">Android Development</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="3" id="flexCheckDefault">
+                    <label for="flexCheckDefault" class="form-check-label">Website Development</label>
+                </div>
+                
+            </div>
+            <div class="col-4 bg-success p-2">
+                <img src="../Image/Equality_in_Islam2.jpg" class="img-thumbnail p-2 mb-2">
+                <img src="../Image/Islam and essential needs.jpg" class="img-thumbnail p-2 mb-2">
+                <img src="../Image/AllahLovesEquality.jpg" class="img-thumbnail p-2 mb-2 br-5">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

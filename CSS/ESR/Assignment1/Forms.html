@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="Engr. Nadeem Ansari">
+		<title> Form </title>
+	</head>
+	<body>
+		<center>
+		<h1>Fill this Form and find out the magic</h1>
+		<br>
+		<form method="post">
+			<label>First Name: </label> 
+			<input type="Text" name="UserFirstName" placeholder="Enter your First Name">
+			<br><br>
+			<label>Last Name: </label> 
+			<input type="Text" name="UserLastName" placeholder="Enter your Last Name">
+			<br><br>
+			<label>E-mail: </label>
+			<input type="email" name="email" placeholder="info@uiccl.com">
+			<br><br>
+			<label>Password: </label>
+			<input type="password" name="Password" placeholder="***************">
+			<br><br>
+			<label>Description: </label><br>
+			<textarea cols="30" rows="10"></textarea>
+			<br><br>
+			<label>Select Your Desired Subjects: </label> <br>
+			<input type="checkbox" name="Math" value="01" checked="">Mathematics 
+			<input type="checkbox" name="Phy" value="02">Physics 
+			<input type="checkbox" name="Chem" value="03">Chemistry 
+			<input type="checkbox" name="Bio" value="04">Biology <br><br><br>
+			<label>Select Your Gender: </label>
+			<input type="radio" name="Gender" value="1" checked=""> Male 
+			<input type="radio" name="Gender" value="2"> Female 
+			<input type="radio" name="Gender" value="3"> Prefer not to say <br><br><br>
+			<label>Select Your Province</label> 
+			<select>
+				<option value="1">Punjab</option>
+				<option value="2">Sindh</option>
+				<option value="3" selected="">KPK</option>
+				<option value="4">Balochistan</option>
+				<option value="5">Gilgit Baltistan</option>
+			</select><br><br><br>
+			<input type="submit" name="submit" value="Submit"> <br> <br> <br>
+			<input type="reset" name="reset" value="Reset"> <br> <br> <br>
+			<label>Upload Your CV: </label>
+			<input type="file" name="file">
+		</form>
+		</center>
+	</body>
+</html>
